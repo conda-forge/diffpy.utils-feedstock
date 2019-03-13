@@ -12,9 +12,11 @@ source:
   sha256: {{ sha256 }}
 
 build:
+  # we need egg_dir to avoid overlapping diffpy/__init__.py files.
+  preserve_egg_dir: True
+  noarch: python
   number: 0
   script: python setup.py install --single-version-externally-managed --record record.txt
-  skip: True  # [not py27]
 
 requirements:
   build:
