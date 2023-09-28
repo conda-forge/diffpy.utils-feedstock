@@ -155,6 +155,8 @@ Feedstock Maintainers
 =====================
 
 * [@CJ-Wright](https://github.com/CJ-Wright/)
+* [@Sparks29032](https://github.com/Sparks29032/)
 * [@dragonyanglong](https://github.com/dragonyanglong/)
 * [@pavoljuhas](https://github.com/pavoljuhas/)
+* [@sbillinge](https://github.com/sbillinge/)
 
