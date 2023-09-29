@@ -1,11 +1,11 @@
-About diffpy.utils
-==================
+About diffpy.utils-feedstock
+============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/diffpy.utils-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/diffpy/diffpy.utils/
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/diffpy.utils-feedstock/blob/main/LICENSE.txt)
 
 Summary: Shared utilities for diffpy packages.
 
@@ -155,6 +155,8 @@ Feedstock Maintainers
 =====================
 
 * [@CJ-Wright](https://github.com/CJ-Wright/)
+* [@Sparks29032](https://github.com/Sparks29032/)
 * [@dragonyanglong](https://github.com/dragonyanglong/)
 * [@pavoljuhas](https://github.com/pavoljuhas/)
+* [@sbillinge](https://github.com/sbillinge/)
 
