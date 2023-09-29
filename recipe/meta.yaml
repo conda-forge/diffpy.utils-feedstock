@@ -1,6 +1,6 @@
 {% set name = "diffpy.utils" %}
-{% set version = "3.1.0" %}
-{% set sha256 = "6ec3ebaff1046176c18d094b91544d8e9f87e6b4237ea2957b9d97900289519e" %}
+{% set version = "3.1.0.post46" %}
+{% set sha256 = "c865001c895240359e5e494a6db601be827ef505ad16b0b80778073f7cf84be8" %}
 
 package:
   name: {{ name|lower }}
@@ -13,13 +13,13 @@ source:
 
 build:
   # we need egg_dir to avoid overlapping diffpy/__init__.py files.
-  preserve_egg_dir: True
+  preserve_egg_dir: true
   noarch: python
   number: 0
   script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
-  build:
+  host:
     - python >=3.7
     - setuptools
 
