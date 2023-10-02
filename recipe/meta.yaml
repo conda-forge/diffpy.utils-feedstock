@@ -1,6 +1,6 @@
 {% set name = "diffpy.utils" %}
-{% set version = "3.1.0" %}
-{% set sha256 = "6ec3ebaff1046176c18d094b91544d8e9f87e6b4237ea2957b9d97900289519e" %}
+{% set version = "v3.2.0" %}
+{% set sha256 = "3f86eca1a2dd8fabfc94ee499638f823e7a77416de615a1799e3d732e60e3a73" %}
 
 package:
   name: {{ name|lower }}
