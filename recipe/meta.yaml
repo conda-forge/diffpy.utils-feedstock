@@ -1,6 +1,6 @@
 {% set name = "diffpy.utils" %}
-{% set version = "3.1.0" %}
-{% set sha256 = "6ec3ebaff1046176c18d094b91544d8e9f87e6b4237ea2957b9d97900289519e" %}
+{% set version = "3.2.3" %}
+{% set sha256 = "7be51189b2c7956d88602b97d7790ffab1e7c8769063d6eeae18ce5d94157f94" %}
 
 package:
   name: {{ name|lower }}
@@ -13,13 +13,13 @@ source:
 
 build:
   # we need egg_dir to avoid overlapping diffpy/__init__.py files.
-  preserve_egg_dir: True
+  preserve_egg_dir: true
   noarch: python
   number: 0
   script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
-  build:
+  host:
     - python >=3.7
     - setuptools
 
@@ -34,6 +34,9 @@ test:
     - diffpy.utils
     - diffpy.utils.parsers
     - diffpy.utils.tests
+
+  requires:
+    - pytest
 
 about:
   home: https://github.com/diffpy/diffpy.utils/
