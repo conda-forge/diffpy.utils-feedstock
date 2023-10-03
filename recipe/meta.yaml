@@ -35,6 +35,9 @@ test:
     - diffpy.utils.parsers
     - diffpy.utils.tests
 
+  requires:
+    - pytest
+
 about:
   home: https://github.com/diffpy/diffpy.utils/
   summary: Shared utilities for diffpy packages.
