@@ -20,7 +20,7 @@ build:
 
 requirements:
   build:
-    - python-build
+    - pip
 
   host:
     - python >=3.7
