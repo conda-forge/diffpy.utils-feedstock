@@ -19,9 +19,6 @@ build:
   script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
-  build:
-    - pip
-
   host:
     - python >=3.7
     - setuptools
