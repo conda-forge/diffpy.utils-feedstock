@@ -7,8 +7,9 @@ package:
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  {% set bdist_name = name | lower | regex_replace("[_.-]+", "_") %}
+  fn: {{ bdist_name }}-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ bdist_name[0] }}/{{ bdist_name }}/{{ bdist_name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
