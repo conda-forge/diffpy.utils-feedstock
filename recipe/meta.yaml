@@ -7,9 +7,13 @@ package:
   version: {{ version }}
 
 source:
-  {% set bdist_name = name | lower | regex_replace("[_.-]+", "_") %}
-  fn: {{ bdist_name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ bdist_name[0] }}/{{ bdist_name }}/{{ bdist_name }}-{{ version }}.tar.gz
+  {% set bdist_name = name|lower|replace(".", "_")|replace("-", "_") %}
+  {% set ns = namespace(bdist_name=bdist_name) %}
+  {% for _ in range(bdist_name|length) %}
+  {% set ns.bdist_name = ns.bdist_name|replace("__", "_") %}
+  {% endfor %}
+  fn: {{ ns.bdist_name }}-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ ns.bdist_name[0] }}/{{ ns.bdist_name }}/{{ ns.bdist_name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
