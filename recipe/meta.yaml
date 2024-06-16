@@ -43,6 +43,7 @@ test:
 
   requires:
     - pytest
+    - freezegun 
 
 about:
   home: https://github.com/diffpy/diffpy.utils/
