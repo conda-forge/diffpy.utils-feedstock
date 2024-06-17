@@ -1,14 +1,19 @@
 {% set name = "diffpy.utils" %}
-{% set version = "3.3.1" %}
-{% set sha256 = "2a50f3885e0099fffd50bedd4a73ca15458ddee816de31ab08c9b5948740bd6d" %}
+{% set version = "3.4.0" %}
+{% set sha256 = "24e4c6108e87345be3518e085b2ebc85efb3e4fc7ff1097297cdcf92e7d9a9b9" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  {% set bdist_name = name|lower|replace(".", "_")|replace("-", "_") %}
+  {% set ns = namespace(bdist_name=bdist_name) %}
+  {% for _ in range(bdist_name|length) %}
+  {% set ns.bdist_name = ns.bdist_name|replace("__", "_") %}
+  {% endfor %}
+  fn: {{ ns.bdist_name }}-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ ns.bdist_name[0] }}/{{ ns.bdist_name }}/{{ ns.bdist_name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
@@ -38,6 +43,7 @@ test:
 
   requires:
     - pytest
+    - freezegun 
 
 about:
   home: https://github.com/diffpy/diffpy.utils/
