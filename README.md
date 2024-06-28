@@ -9,15 +9,11 @@ Package license: BSD-3-Clause
 
 Summary: Shared utilities for diffpy packages.
 
-Development: https://github.com/diffpy/diffpy.utils
+Development: https://github.com/diffpy/diffpy.utils/
 
-Documentation: http://www.diffpy.org/diffpy.utils/
+Documentation: http://diffpy.github.io/diffpy.utils/
 
-The diffpy.utils package provides functions for extracting array
-data from variously formatted text files and wx GUI utilities used by the
-PDFgui program. The package also includes an interpolation function based on
-the Whittaker-Shannon formula that can be used to resample a PDF or other
-profile function over a new grid.
+The diffpy.utils package provides functions for extracting array data from variously formatted text files and wx GUI utilities used by the PDFgui program. The package also includes an interpolation function based on the Whittaker-Shannon formula that can be used to resample a PDF or other profile function over a new grid.
 
 
 Current build status
