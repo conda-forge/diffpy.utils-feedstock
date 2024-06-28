@@ -1,23 +1,16 @@
-{% set name = "diffpy.utils" %}
-{% set version = "3.4.0" %}
-{% set sha256 = "24e4c6108e87345be3518e085b2ebc85efb3e4fc7ff1097297cdcf92e7d9a9b9" %}
+{%- set name = diffpy.utils -%}
+{%- set version = 3.4.0 -%}
+{%- set sha256 = 24e4c6108e87345be3518e085b2ebc85efb3e4fc7ff1097297cdcf92e7d9a9b9 -%}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  {% set bdist_name = name|lower|replace(".", "_")|replace("-", "_") %}
-  {% set ns = namespace(bdist_name=bdist_name) %}
-  {% for _ in range(bdist_name|length) %}
-  {% set ns.bdist_name = ns.bdist_name|replace("__", "_") %}
-  {% endfor %}
-  fn: {{ ns.bdist_name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ ns.bdist_name[0] }}/{{ ns.bdist_name }}/{{ ns.bdist_name }}-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/d/diffpy_utils/diffpy_utils-3.4.0.tar.gz
   sha256: {{ sha256 }}
 
 build:
-  # we need egg_dir to avoid overlapping diffpy/__init__.py files.
   preserve_egg_dir: true
   noarch: python
   number: 0
@@ -25,14 +18,14 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python >= 3.10
     - setuptools
     - pip
 
   run:
-    - python >=3.7
+    - python >= 3.10
     - setuptools
-    - numpy >=1.3
+    - numpy >= 1.3
 
 test:
   imports:
@@ -43,22 +36,18 @@ test:
 
   requires:
     - pytest
-    - freezegun 
+    - freezegun
 
 about:
   home: https://github.com/diffpy/diffpy.utils/
   summary: Shared utilities for diffpy packages.
   license: BSD-3-Clause
   license_family: BSD
-  license_file: LICENSE.txt
+  license_file: LICENSE.rst
   description: |
-    The diffpy.utils package provides functions for extracting array
-    data from variously formatted text files and wx GUI utilities used by the
-    PDFgui program. The package also includes an interpolation function based on
-    the Whittaker-Shannon formula that can be used to resample a PDF or other
-    profile function over a new grid.
-  doc_url: http://www.diffpy.org/diffpy.utils/
-  dev_url: https://github.com/diffpy/diffpy.utils
+    The diffpy.utils package provides functions for extracting array data from variously formatted text files and wx GUI utilities used by the PDFgui program. The package also includes an interpolation function based on the Whittaker-Shannon formula that can be used to resample a PDF or other profile function over a new grid.
+  doc_url: http://diffpy.github.io/diffpy.utils/
+  dev_url: https://github.com/diffpy/diffpy.utils/
 
 extra:
   recipe-maintainers:
