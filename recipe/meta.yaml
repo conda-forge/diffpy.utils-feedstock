@@ -36,6 +36,7 @@ test:
 
   requires:
     - pytest
+    - pytest-mock
     - freezegun
 
 about:
