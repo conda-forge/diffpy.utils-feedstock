@@ -6,7 +6,7 @@ import importlib
 from pathlib import Path
 
 if __name__ == "__main__":
-    package_directory = 'bg_mpl_stylesheets'
+    package_directory = 'diffpy.utils'
     module = importlib.import_module(package_directory)
     module_path = Path(module.__file__).parent
     test_location = module_path / 'tests'
