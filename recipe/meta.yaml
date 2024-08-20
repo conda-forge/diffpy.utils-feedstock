@@ -42,7 +42,7 @@ test:
 
   commands:
     - pip check
-    - python -m pytest
+    - pytest --pyargs diffpy.utils
 
 about:
   home: https://github.com/diffpy/diffpy.utils/
