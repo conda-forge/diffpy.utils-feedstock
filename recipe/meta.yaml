@@ -35,9 +35,14 @@ test:
     - diffpy.utils.tests
 
   requires:
+    - pip
     - pytest
     - pytest-mock
     - freezegun
+
+  commands:
+    - pip check
+    - python -m pytest
 
 about:
   home: https://github.com/diffpy/diffpy.utils/
