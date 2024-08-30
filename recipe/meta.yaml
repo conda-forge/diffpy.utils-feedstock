@@ -11,9 +11,8 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  preserve_egg_dir: true
   noarch: python
-  number: 2
+  number: 3
   script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
