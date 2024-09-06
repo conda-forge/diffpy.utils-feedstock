@@ -1,14 +1,13 @@
-{%- set name = "diffpy.utils" -%}
+{%- set name = "diffpy.utils-test" -%}
 {%- set version = "3.4.0" -%}
-{%- set sha256 = "24e4c6108e87345be3518e085b2ebc85efb3e4fc7ff1097297cdcf92e7d9a9b9" -%}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/d/diffpy_utils/diffpy_utils-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 4b0c3119e2a13a43d77d4109dc8d2c4a367fcf737e2548d40dba44c5c833ae58
 
 build:
   noarch: python
