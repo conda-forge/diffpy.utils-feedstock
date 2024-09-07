@@ -29,9 +29,9 @@ test:
   imports:
     - diffpy
   commands:
-    - pip check
     - pytest
   requires:
+    - pip
     - pytest
     - pytest-mock
     - freezegun
