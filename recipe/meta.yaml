@@ -1,13 +1,13 @@
 {%- set name = "diffpy.utilstestlee" -%}
-{%- set version = "3.4.0rc1" -%}
+{%- set version = "3.4.0rc5" -%}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://test-files.pythonhosted.org/packages/54/73/74e0b75b1bbed937cf127cf543c01a4a7d68c71b81fa0d0cbe6672db3592/diffpy_utilstestlee-3.4.0.tar.gz
-  sha256: fb71236f364635f93628960a3f128e8d11d60a1fcc8b4390e9123cebfa480ac4
+  url: https://test-files.pythonhosted.org/packages/5b/d4/9492a9039b25f23b126d9d16f9a5076e1bc3650f5c2562dfc858361eb276/diffpy_utilstestlee-3.2.0rc5.tar.gz
+  sha256: c49cb55cf06cd98b741e67aebe0762e48b5410bd891636973bf6e26c7e95278c
 
 build:
   noarch: python
