@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://test.pypi.io/packages/source/d/test_lee/diffpy_utilstestlee-{{ version }}.tar.gz
+  url: https://test-files.pythonhosted.org/packages/7a/58/e96e19e7278a2e26a18f4c55f7b1d00fcb8595c50a3859517dcdf89fbc2c/diffpy_utilstestlee-3.2.0rc1.tar.gz
   sha256: a4d0cfcad08d4848d5229ad9b362d645f593599356303afb0021478e76605045
 
 build:
