@@ -26,8 +26,6 @@ requirements:
     - numpy >=1.3
 
 test: 
-  imports:
-    - diffpy.utils
   requires:
     - pip
     - pytest
