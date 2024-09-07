@@ -28,9 +28,9 @@ requirements:
 test:
   imports:
     - diffpy
-    - diffpy.utils
-    - diffpy.utils.parsers
-
+  commands:
+    - pip check
+    - pytest
   requires:
     - pytest
     - pytest-mock
