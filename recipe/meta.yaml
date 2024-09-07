@@ -25,7 +25,9 @@ requirements:
     - setuptools
     - numpy >=1.3
 
-test:
+test: 
+  source_files:
+    - tests/
   requires:
     - pip
     - pytest
