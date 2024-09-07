@@ -32,10 +32,10 @@ test:
     - pytest-mock
     - freezegun
   source_files:
-    - tests/
+    - tests
   commands:
     - pip check
-    - pytest tests/
+    - pytest
 
 about:
   home: https://github.com/diffpy/diffpy.utils/
