@@ -1,4 +1,4 @@
-
+{%- set name = "diffpy.utils" -%}
 {%- set version = "3.4.0rc10" -%}
 
 package:
