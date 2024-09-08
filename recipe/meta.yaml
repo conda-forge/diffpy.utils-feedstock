@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://test.pypi.io/packages/source/d/diffpy_utils/diffpy_utils-{{ version }}.tar.gz
+  url: https://test-files.pythonhosted.org/packages/79/ef/0e9c66d16e52a11d3ae7c2877d8b09a44d982a6f9864542fe358e23293cd/diffpy_utils-3.2.0rc1.tar.gz
   sha256: 681dc73e25f00764e677e028602a1c9490c0ffc0016bbc5edf07c6d5df06e26a
 
 build:
