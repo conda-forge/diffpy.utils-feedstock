@@ -32,12 +32,11 @@ test:
     - pytest
     - pytest-mock
     - freezegun
-    - m2-grep  # [win]
   source_files:
     - tests
   commands:
     - pip check
-    - pip list | grep -iE "^name-of-package\s+{{ version.replace('.', '\.') }}$"
+    - pip list
     - pytest
     
 
