@@ -5,7 +5,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/diffpy.utils-fe
 
 Home: https://github.com/diffpy/diffpy.utils/
 
-Package license: BSD-3-Clause
+Package license: [LICENSE](https://github.com/diffpy/diffpy.utils/blob/main/LICENSE.rst) and [LICENSE_DANSE](https://github.com/diffpy/diffpy.utils/blob/main/LICENSE_DANSE.txt)
 
 Summary: Shared utilities for diffpy packages.
 
