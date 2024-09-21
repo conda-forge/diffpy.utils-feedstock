@@ -23,6 +23,7 @@ requirements:
   run:
     - python >=3.10
     - setuptools
+    - setuptools-git-versioning <2
     - numpy
 
 test: 
