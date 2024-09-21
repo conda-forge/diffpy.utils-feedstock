@@ -18,6 +18,7 @@ requirements:
   host:
     - python >=3.10
     - setuptools
+    - setuptools-git-versioning<2
     - pip
 
   run:
@@ -31,11 +32,14 @@ test:
     - pytest
     - pytest-mock
     - freezegun
+    - m2-grep  # [win]
   source_files:
     - tests
   commands:
     - pip check
+    - pip list | grep -iE "^name-of-package\s+{{ version.replace('.', '\.') }}$"
     - pytest
+    
 
 about:
   home: https://github.com/diffpy/diffpy.utils/
