@@ -1,5 +1,5 @@
 {%- set name = "diffpy.utils" -%}
-{%- set version = "3.4.2" -%}
+{%- set version = "3.5.0" -%}
 
 package:
   name: {{ name|lower }}
@@ -7,22 +7,22 @@ package:
 
 source:
   url: https://pypi.io/packages/source/d/diffpy_utils/diffpy_utils-{{ version }}.tar.gz
-  sha256: 348b8cdd7c2bf0b90386828ff99e3306f7f5b441d8e926407da95ab6c174d299
+  sha256: 16d4433a8dc6c7b95557895a0a95279ced27d118d8d02d572c187d96d5b1fdce
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
   host:
-    - python >=3.10
+    - python >=3.11
     - setuptools
     - setuptools-git-versioning >=2.0
     - pip
 
   run:
-    - python >=3.10
+    - python >=3.11
     - numpy
 
 test: 
