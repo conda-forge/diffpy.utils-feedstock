@@ -39,14 +39,14 @@ Current release info
 Installing diffpy.utils
 =======================
 
-Installing `diffpy.utils` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
+Installing `diffpy.utils` from the `conda-forge/label/diffpy.utils_rc` channel can be achieved by adding `conda-forge/label/diffpy.utils_rc` to your channels with:
 
 ```
-conda config --add channels conda-forge
+conda config --add channels conda-forge/label/diffpy.utils_rc
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `diffpy.utils` can be installed with `conda`:
+Once the `conda-forge/label/diffpy.utils_rc` channel has been enabled, `diffpy.utils` can be installed with `conda`:
 
 ```
 conda install diffpy.utils
@@ -61,26 +61,26 @@ mamba install diffpy.utils
 It is possible to list all of the versions of `diffpy.utils` available on your platform with `conda`:
 
 ```
-conda search diffpy.utils --channel conda-forge
+conda search diffpy.utils --channel conda-forge/label/diffpy.utils_rc
 ```
 
 or with `mamba`:
 
 ```
-mamba search diffpy.utils --channel conda-forge
+mamba search diffpy.utils --channel conda-forge/label/diffpy.utils_rc
 ```
 
 Alternatively, `mamba repoquery` may provide more information:
 
 ```
 # Search all versions available on your platform:
-mamba repoquery search diffpy.utils --channel conda-forge
+mamba repoquery search diffpy.utils --channel conda-forge/label/diffpy.utils_rc
 
 # List packages depending on `diffpy.utils`:
-mamba repoquery whoneeds diffpy.utils --channel conda-forge
+mamba repoquery whoneeds diffpy.utils --channel conda-forge/label/diffpy.utils_rc
 
 # List dependencies of `diffpy.utils`:
-mamba repoquery depends diffpy.utils --channel conda-forge
+mamba repoquery depends diffpy.utils --channel conda-forge/label/diffpy.utils_rc
 ```
 
 
