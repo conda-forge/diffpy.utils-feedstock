@@ -1,3 +1,4 @@
+{% set python_min = '3.11' %}
 {%- set name = "diffpy.utils" -%}
 {%- set version = "3.5.0" -%}
 
@@ -6,23 +7,23 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/d/diffpy_utils/diffpy_utils-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/d/diffpy_utils/diffpy_utils-{{ version }}.tar.gz
   sha256: 16d4433a8dc6c7b95557895a0a95279ced27d118d8d02d572c187d96d5b1fdce
 
 build:
   noarch: python
-  number: 0
-  script: python -m pip install --no-deps --ignore-installed .
+  number: 1
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
-    - python >=3.11
+    - python {{ python_min }}
     - setuptools
     - setuptools-git-versioning >=2.0
     - pip
 
   run:
-    - python >=3.11
+    - python >={{ python_min }}
     - numpy
 
 test: 
@@ -31,6 +32,7 @@ test:
     - pytest
     - pytest-mock
     - freezegun
+    - python {{ python_min }}
   source_files:
     - tests
   commands:
