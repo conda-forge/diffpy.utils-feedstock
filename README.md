@@ -156,4 +156,5 @@ Feedstock Maintainers
 * [@dragonyanglong](https://github.com/dragonyanglong/)
 * [@pavoljuhas](https://github.com/pavoljuhas/)
 * [@sbillinge](https://github.com/sbillinge/)
+* [@yucongalicechen](https://github.com/yucongalicechen/)
 
