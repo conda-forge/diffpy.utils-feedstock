@@ -25,6 +25,8 @@ requirements:
   run:
     - python >={{ python_min }}
     - numpy
+    - xraydb
+    - scipy
 
 test: 
   requires:
@@ -32,6 +34,7 @@ test:
     - pytest
     - pytest-mock
     - freezegun
+    - DeepDiff
     - python {{ python_min }}
   source_files:
     - tests
