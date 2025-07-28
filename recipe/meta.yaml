@@ -46,7 +46,7 @@ test:
 about:
   home: https://github.com/diffpy/diffpy.utils/
   summary: Shared utilities for diffpy packages.
-  license: Free To Use But Restricted
+  license: LicenseRef-diffpy
   license_file: LICENSE.rst
   description: |
     The diffpy.utils package provides functions for extracting array data from variously formatted text files and wx GUI utilities used by the PDFgui program. The package also includes an interpolation function based on the Whittaker-Shannon formula that can be used to resample a PDF or other profile function over a new grid.
