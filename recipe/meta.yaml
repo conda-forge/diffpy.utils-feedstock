@@ -1,6 +1,6 @@
 {% set python_min = '3.11' %}
 {%- set name = "diffpy.utils" -%}
-{%- set version = "3.6.1rc0" -%}
+{%- set version = "3.6.1" -%}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/d/diffpy_utils/diffpy_utils-{{ version }}.tar.gz
-  sha256: b30c8554aec28f282e5e0e087ec6a228c4459b2cc73f00a7561c9d9d9605c9c0
+  sha256: beafe411d343f36ddd0be9e01d05ef8ae4045e24162ccc6ddac217fd111e4d95
 
 build:
   noarch: python
@@ -46,7 +46,7 @@ test:
 about:
   home: https://github.com/diffpy/diffpy.utils/
   summary: Shared utilities for diffpy packages.
-  license: Free To Use But Restricted
+  license: LicenseRef-diffpy
   license_file: LICENSE.rst
   description: |
     The diffpy.utils package provides functions for extracting array data from variously formatted text files and wx GUI utilities used by the PDFgui program. The package also includes an interpolation function based on the Whittaker-Shannon formula that can be used to resample a PDF or other profile function over a new grid.
