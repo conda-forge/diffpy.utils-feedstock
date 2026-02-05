@@ -1,6 +1,6 @@
-{% set python_min = '3.11' %}
-{%- set name = "diffpy.utils" -%}
-{%- set version = "3.6.1" -%}
+{% set name = "diffpy.utils" %}
+{% set version = "3.7.1" %}
+{% set python_min = "3.11" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/d/diffpy_utils/diffpy_utils-{{ version }}.tar.gz
-  sha256: beafe411d343f36ddd0be9e01d05ef8ae4045e24162ccc6ddac217fd111e4d95
+  sha256: cc50e78883f66258cf75a1a5342746789d5d1ef8044991305023189f6bf2088f
 
 build:
   noarch: python
@@ -28,16 +28,17 @@ requirements:
     - xraydb
     - scipy
 
-test: 
+test:
   requires:
+    - python {{ python_min }}
     - pip
     - pytest
     - pytest-mock
     - freezegun
     - DeepDiff
-    - python {{ python_min }}
   source_files:
     - tests
+
   commands:
     - pip check
     - pip list
@@ -59,6 +60,7 @@ extra:
     - bobleesj
     - sbillinge
     - Sparks29032
+    - cadenmyers13
     - dragonyanglong
     - CJ-Wright
     - pavoljuhas
