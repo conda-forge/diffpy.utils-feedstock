@@ -1,6 +1,6 @@
 {% set name = "diffpy.utils" %}
-{% set version = "3.7.1" %}
-{% set python_min = "3.11" %}
+{% set version = "3.7.2" %}
+{% set python_min = "3.10" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/d/diffpy_utils/diffpy_utils-{{ version }}.tar.gz
-  sha256: cc50e78883f66258cf75a1a5342746789d5d1ef8044991305023189f6bf2088f
+  sha256: 463486a100ba981299b3b16c40ab39b0e84312d63498870e5d15e0608614ab2c
 
 build:
   noarch: python
